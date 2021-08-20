@@ -1,0 +1,6 @@
+<script type="text/javascript">
+		function adicionarDado(idCategoria,categoria){
+			$('#idcategoria').val(idCategoria);
+			$('#categoriaU').val(categoria);
+		}
+</script>

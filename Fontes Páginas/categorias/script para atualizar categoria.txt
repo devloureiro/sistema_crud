@@ -1,0 +1,21 @@
+<script type="text/javascript">
+		$(document).ready(function(){
+			$('#btnAtualizaCategoria').click(function(){
+
+				dados=$('#frmCategoriaU').serialize();
+				$.ajax({
+					type:"POST",
+					data:dados,
+					url:"../procedimentos/categorias/atualizarCategorias.php",
+					success:function(r){
+						if(r==1){
+							$('#tabelaCategoriaLoad').load("categorias/tabelaCategorias.php");
+							alertify.success("Atualizado com Sucesso :)");
+						}else{
+							alertify.error("Não foi possível atualizar :(");
+						}
+					}
+				});
+			});
+		});
+	</script>

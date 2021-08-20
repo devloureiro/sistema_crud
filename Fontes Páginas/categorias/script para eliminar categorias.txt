@@ -1,0 +1,19 @@
+function eliminaCategoria(idcategoria){
+			alertify.confirm('Deseja excluir esta categoria?', function(){ 
+				$.ajax({
+					type:"POST",
+					data:"idcategoria=" + idcategoria,
+					url:"../procedimentos/categorias/eliminarCategorias.php",
+					success:function(r){
+						if(r==1){
+							$('#tabelaCategoriaLoad').load("categorias/tabelaCategorias.php");
+							alertify.success("Excluido com sucesso!!");
+						}else{
+							alertify.error("Não se pode eliminar");
+						}
+					}
+				});
+			}, function(){ 
+				alertify.error('Cancelado !')
+			});
+		}
