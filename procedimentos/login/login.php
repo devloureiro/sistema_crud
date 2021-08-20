@@ -1,4 +1,5 @@
 <?php 
+session_start();
 require_once('../../classes/conexao.php');
 require_once('../../classes/usuarios.php');
 
@@ -9,15 +10,14 @@ $obj = new usuarios(); // chamando a classe de usuarios
 //$nome = $_POST['nome'];
 //$usuario = $_POST['usuario'];
 //$email = $_POST['email']; 
-
-$senha =sha1($_POST['senha']);
+//
+//$senha =sha1($_POST['senha']);
 
 $dados = array(    
-    $_POST['nome'],
-    $_POST['usuario'],
+    
     $_POST['email'],
-    $senha
+    $_POST['senha']
 );
 
-echo $obj->registroUsuario($dados);
+echo $obj->login($dados);
 

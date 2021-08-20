@@ -1,9 +1,17 @@
-<?php
+<?php 
+// fazendo a conferencia se ja tem um registro como administrador.
 require_once('classes/conexao.php');
-
+require_once('classes/usuarios.php');
 $obj = new conectar();
 $conexao =$obj-> conexao();
 
+$sql = "SELECT * from usuarios where email = 'admin'";
+$result = mysqli_query($conexao, $sql);
+
+$validar = 0;
+if(mysqli_num_rows($result) > 0){
+    header("location:index.php");
+}
 ?>
 
 <!DOCTYPE html>
