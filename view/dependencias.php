@@ -13,4 +13,4 @@
 <script src="../lib/alertifyjs/alertify.js"></script>
 <script src="../lib/bootstrap/js/bootstrap.js"></script>
 <script src="../lib/select2/js/select2.js"></script>
-<script src="js/funcoes.js"></script>
+<script src="../js/funcoes.js"></script>

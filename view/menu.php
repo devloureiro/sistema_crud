@@ -31,10 +31,10 @@
             
           </li>
           <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-list-alt"></span> Menu 1 <span class="caret"></span></a>
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-list-alt"></span> Gestão <span class="caret"></span></a>
             <ul class="dropdown-menu">
-              <li><a href="#.php">Item 1</a></li>
-              <li><a href="#.php">Item 2</a></li>
+              <li><a href="categorias.php">Categorias</a></li>
+              <li><a href="#.php">Produtos</a></li>
             </ul>
           </li>
 
